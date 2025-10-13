@@ -45,7 +45,7 @@ function App() {
     
     <>
       <div className="bg-gray-400 h-screen w-screen flex flex-col items-center">
-        <div className="w-[500px]">
+        <div className="w-[300px] sm:w-[500px]">
           <h1 className="text-gray-800 text-3xl flex justify-center font-bold m-5 ">Gerenciador de tarefas</h1>
           <AddTask addTask={addTask}/>
           <Tasks tasks={tasks} removeTask={deleteTask} toggleComplete={toggleComplete}/>

@@ -15,9 +15,9 @@ function Sobre() {
     const description = seachParams.get("description");
     return (
         <div className="bg-gray-400 h-screen w-screen flex flex-col items-center">
-            <div className="w-[500px]">
+            <div className="w-[300px] sm:w-[500px]">
                 <div className="relative flex justify-center items-center flex-row-reverse m-4">
-                    <h1 className="text-gray-800 text-3xl font-bold m-2">Descrição da tarefa</h1>
+                    <h1 className="text-gray-800 text-2xl sm:text-3xl font-bold m-2">Descrição da tarefa</h1>
                 
                     <button onClick={goBack} className="absolute left-0"><ArrowLeft /></button>
                 </div>

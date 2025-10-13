@@ -10,7 +10,7 @@ function Tasks(tasks) {
     }
     
     return(
-            <ul className="space-y-6 bg-white p-6 rounded-md ">
+            <ul className="bg-white p-6 rounded-md space-y-6">
                 {tasks.tasks.map((task) => (
                     <li key={task.id} className="flex flex-row">
                         
