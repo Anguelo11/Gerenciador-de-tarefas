@@ -30,12 +30,12 @@ function App() {
  }
 
  const deleteTask = (id) => {
-    setTasks(prevTasks => prevTasks.filter(task => task.id !== id))
+    setTasks(e => e.filter(task => task.id !== id))
  }
 
  const toggleComplete = (id) => {
-  setTasks(prevTasks => 
-    prevTasks.map(task =>
+  setTasks(e => 
+    e.map(task =>
       task.id === id ? {...task, completed: !task.completed} : task
     )
   )
@@ -44,9 +44,9 @@ function App() {
   return (
     
     <>
-      <div className="bg-gray-400 h-screen w-screen flex flex-col items-center">
+      <div className="bg-gray-400 sm:h-screen sm:w-screen flex flex-col items-center p-4">
         <div className="w-[300px] sm:w-[500px]">
-          <h1 className="text-gray-800 text-3xl flex justify-center font-bold m-5 ">Gerenciador de tarefas</h1>
+          <h1 className="text-gray-800 text-2xl sm:text-3xl flex sm:justify-center font-bold m-5">Gerenciador de tarefas</h1>
           <AddTask addTask={addTask}/>
           <Tasks tasks={tasks} removeTask={deleteTask} toggleComplete={toggleComplete}/>
         </div>

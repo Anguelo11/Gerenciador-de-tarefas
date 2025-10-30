@@ -19,13 +19,15 @@ function AddTask({ addTask }) {
 
                 <input
                 onChange={(e) => setTitle(e.target.value)}
-                className="bg-gray-200 rounded-sm p-4 mb-4" type="text"
+                className={`bg-gray-200 rounded-sm p-4 mb-4 `}
+                type="text"
                 value={title}
                 placeholder="Digite sua tarefa" />
 
                 <input 
                 onChange={(e) => setDescription(e.target.value)}
-                className="bg-gray-200 rounded-sm p-4 mb-4" type="text"
+                className="bg-gray-200 rounded-sm p-4 mb-4" 
+                type="text"
                 value={description} 
                 placeholder="Digite a descrição da tarefa" />
 
