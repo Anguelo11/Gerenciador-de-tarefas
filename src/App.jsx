@@ -44,7 +44,7 @@ function App() {
   return (
     
     <>
-      <div className="bg-gray-400 sm:h-screen sm:w-screen flex flex-col items-center ">
+      <div className="bg-gray-400 min-h-screen max-w-full flex flex-col items-center p-3 overflow-y-auto overflow-x-hidden">
         <div className="w-[300px] sm:w-[500px]">
           <h1 className="text-gray-800 text-2xl sm:text-3xl flex sm:justify-center font-bold m-5">Gerenciador de tarefas</h1>
           <AddTask addTask={addTask}/>
